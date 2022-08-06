@@ -156,6 +156,7 @@
         }
         #bm-content .bm-logo {
           width: 200px;
+          height: 200px;
           display: block;
           margin: -40px 0;
         }
@@ -271,6 +272,7 @@
           }
           #bm-content .bm-logo {
             width: 80px;
+            height: 80px;
             margin: 0;
           }
         }
@@ -474,7 +476,7 @@
             .replace("/?ref=ux.pub", "")
             .replace("?ref=ux.pub", "");
           return `<tr class="bm-el rate-${rate}" bid="${id}"><td><a class="bm-ia" href="${href}" target="_blank" rel="nofollow">
-                    <img class="bm-logo" src="${img}"/></a></td><td><h4><a href="${href}" target="_blank" rel="nofollow">${name}</a></h4><p>${text}</p><!--small>Rate: ${rate}</small--></td></tr>`;
+                    <img loading="lazy" class="bm-logo" src="${img}"/></a></td><td><h4><a href="${href}" target="_blank" rel="nofollow">${name}</a></h4><p>${text}</p><!--small>Rate: ${rate}</small--></td></tr>`;
         }
         function createGalleryElementHTML(name, href, img, text, cat) {
           hreftext = href
@@ -482,7 +484,7 @@
             .replace("/?ref=ux.pub", "")
             .replace("?ref=ux.pub", "");
           return `<div class="bm-gal-el"><a class="bm-ia" href="${href}" target="_blank" rel="nofollow">
-                    <img class="bm-logo" src="${img}"/></a><small>${cat}</small><h4><a href="${href}" target="_blank" rel="nofollow">${name}</a></h4><p>${text}</p></div>`;
+                    <img loading="lazy" class="bm-logo" src="${img}"/></a><small>${cat}</small><h4><a href="${href}" target="_blank" rel="nofollow">${name}</a></h4><p>${text}</p></div>`;
         }
         function createNavigationHTML(b) {
           menu = `<div class="bm-nav"><h3>
